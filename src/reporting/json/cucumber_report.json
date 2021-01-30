@@ -1,0 +1,330 @@
+[
+  {
+    "description": "    Feature Description:To make deposits and Withdrawl into a specific Account",
+    "keyword": "Feature",
+    "name": "Account Transactions",
+    "line": 1,
+    "id": "account-transactions",
+    "tags": [],
+    "uri": "src\\feature\\Account.feature",
+    "elements": [
+      {
+        "id": "account-transactions;deposit-amount",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Deposit amount",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 9
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user is on Home page",
+            "match": {
+              "location": "src\\stepdef\\BaseStep.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6035000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "user logs in as Customer",
+            "match": {
+              "location": "src\\stepdef\\LoginStep.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5268000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "user selects account as \"1001\"",
+            "match": {
+              "location": "src\\stepdef\\AccountStep.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2276000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "user selects deposit section",
+            "match": {
+              "location": "src\\stepdef\\AccountStep.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 205000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "user deposits amount as \"10000\"",
+            "match": {
+              "location": "src\\stepdef\\AccountStep.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 895000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "Amount must be deposted to the account",
+            "match": {
+              "location": "src\\stepdef\\AccountStep.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 202000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "src\\hooks\\ScenarioHooks.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "account-transactions;withdraw-amount",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Withdraw amount",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 15
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user is on Home page",
+            "match": {
+              "location": "src\\stepdef\\BaseStep.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1024000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "user logs in as Customer",
+            "match": {
+              "location": "src\\stepdef\\LoginStep.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2116000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "user selects account as \"1001\"",
+            "match": {
+              "location": "src\\stepdef\\AccountStep.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1758000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "user selects withdraw section",
+            "match": {
+              "location": "src\\stepdef\\AccountStep.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 221000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "user withdraw amount as \"10000\"",
+            "match": {
+              "location": "src\\stepdef\\AccountStep.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1882000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Amount must be withdrawn from the account",
+            "match": {
+              "location": "src\\stepdef\\AccountStep.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 253000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "src\\hooks\\ScenarioHooks.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "    Feature Description: Login as Customer",
+    "keyword": "Feature",
+    "name": "Login",
+    "line": 1,
+    "id": "login",
+    "tags": [],
+    "uri": "src\\feature\\Login.feature",
+    "elements": [
+      {
+        "id": "login;login-as-customer",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Login as Customer",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 8
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user is on Home page",
+            "match": {
+              "location": "src\\stepdef\\BaseStep.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 972000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "user logs in as Customer",
+            "match": {
+              "location": "src\\stepdef\\LoginStep.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2079000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "user see own name in welcome message",
+            "match": {
+              "location": "src\\stepdef\\LoginStep.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 166000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "src\\hooks\\ScenarioHooks.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

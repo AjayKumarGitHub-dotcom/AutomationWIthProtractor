@@ -1,0 +1,89 @@
+[
+  {
+    "description": "    Feature Description: Login as Customer",
+    "keyword": "Feature",
+    "name": "Login",
+    "line": 1,
+    "id": "login",
+    "tags": [],
+    "uri": "src\\feature\\Login.feature",
+    "elements": [
+      {
+        "id": "login;login-as-customer",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Login as Customer",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 8
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user is on Home page",
+            "match": {
+              "location": "src\\stepdef\\BaseStep.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3572000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "user logs in as Customer",
+            "match": {
+              "location": "src\\stepdef\\LoginStep.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6283000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "user see own name in welcome message",
+            "match": {
+              "location": "src\\stepdef\\LoginStep.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1480000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "src\\hooks\\ScenarioHooks.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
