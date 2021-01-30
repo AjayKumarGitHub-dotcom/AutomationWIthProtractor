@@ -1,1 +1,1 @@
-# protractor-cucumber
+# protractor-cucumber-typescript
