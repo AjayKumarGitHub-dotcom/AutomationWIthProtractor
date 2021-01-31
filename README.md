@@ -1,6 +1,7 @@
 # A simple quickstart automation framework with protractor, cucumber, typescript with Zalenium for Grid setup(refer Zalenium official website for setup guidelines with docker), cucumber-html-reporter and jenkins as CI/CD tool with feature filtering  
 
-#Pre- requisite: 
+#Pre- requisite:
+
 1 Active choice, NodeJs plugins in jenkins
 
 2 place a protractorfeature.txt having feature names(one at each line, put a * to run all features as first line) file in jenkins workspace
