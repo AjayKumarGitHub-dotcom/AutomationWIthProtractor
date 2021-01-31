@@ -4,7 +4,7 @@ import { CucumberReportExtension } from "./src/reporting/CucumberReportExtension
 var argv = require('minimist')(process.argv.slice(3));
 
 export let config: Config = {
-
+     baseUrl:argv.baseUrl,
     seleniumAddress: "http://localhost:4444/wd/hub",
     multiCapabilities: [
         {
