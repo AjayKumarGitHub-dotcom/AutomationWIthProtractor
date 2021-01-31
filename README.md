@@ -11,7 +11,7 @@ A simple quickstart automation framework with protractor, cucumber, typescript w
 1 Active choice parameter: Features (type as Multiselect)
 
 -groovy script:def featureList=[]
- new File("/Users/<username>/.jenkins/workspace/protractorfeatures.txt").eachLine{line->featureList.add('./src/feature/'+line+'.feature');}
+ new File("/Users/username/.jenkins/workspace/protractorfeatures.txt").eachLine{line->featureList.add('./src/feature/'+line+'.feature');}
  return featureList;
   
 -groovy fallback script: return['error']
