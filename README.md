@@ -4,7 +4,7 @@ A simple quickstart automation framework with protractor, cucumber, typescript w
 
 1 Active choice, NodeJs plugins in jenkins
 
-2 place a protractorfeature.txt having feature names(one at each line, put a * to run all features as first line) file in jenkins workspace
+2 place a protractorfeatures.txt having feature names(one at each line, put a * to run all features as first line) file in jenkins workspace
 
 #parameters to set in jenkins:
 
