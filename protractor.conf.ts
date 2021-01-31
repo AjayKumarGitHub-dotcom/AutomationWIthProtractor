@@ -8,14 +8,14 @@ export let config: Config = {
     seleniumAddress: "http://localhost:4444/wd/hub",
     multiCapabilities: [
         {
-            'browser': 'chrome',
+            'browserName': 'chrome',
             'chromeOptions':
             {
                 'args': ['--disable-infobars', '--ignore-certificate-errors',]
             },
         },
         {
-            'browser': 'firefox',
+            'browserName': 'firefox',
             'marionette': true,
             'moz:firefoxOptions':
             {
