@@ -16,11 +16,17 @@ A simple quickstart automation framework with protractor, cucumber, typescript w
   
 -groovy fallback script: return['error']
 
+
+
+
 2 Active choice parameter: tags (type as single select)
 
 -groovy script:return['@smoke','@sanity','@regression','@runtime','@developed']
 
 -groovy fallback script: return['error']
+
+
+
 
 3 Active choice parameter: baseUrl (type as single select)
 
@@ -29,6 +35,9 @@ A simple quickstart automation framework with protractor, cucumber, typescript w
 -groovy fallback script: return['error']
 
 NOTE: here I have used url for demo purpose only
+
+
+
 
 
 #commands for shell/bat build step:
@@ -40,6 +49,7 @@ npm run tsc
 npm run webdriver:update
 
 npm run test -- --specs=$Features --tags=tags --baseUrl=$baseUrl
+
 
 
 #Post build steps
