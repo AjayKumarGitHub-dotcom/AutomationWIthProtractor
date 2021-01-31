@@ -27,8 +27,11 @@ NOTE: here I have used url for demo purpose only
 #commands for shell/bat build step:
 
 npm install
+
 npm run tsc
+
 npm run webdriver:update
+
 npm run test -- --specs=$Features --tags=tags --baseUrl=$baseUrl
 
 
