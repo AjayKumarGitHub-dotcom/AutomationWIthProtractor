@@ -48,7 +48,7 @@ npm run tsc
 
 npm run webdriver:update
 
-npm run test -- --specs=$Features --tags=tags --baseUrl=$baseUrl
+npm run test -- --specs=$Features --tags=$tags --baseUrl=$baseUrl
 
 
 
