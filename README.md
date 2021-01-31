@@ -7,6 +7,7 @@
 2 place a protractorfeature.txt having feature names(one at each line, put a * to run all features as first line) file in jenkins workspace
 
 #parameters to set in jenkins:
+
 1 Active choice parameter: Features (type as Multiselect)
 groovy script:def featureList=[]
 new File("/Users/<username>/.jenkins/workspace/protractorfeatures.txt").eachLine{line->featureList.add('./src/feature/'+line+'.feature');}
@@ -24,6 +25,7 @@ NOTE: here I have used url for demo purpose only
 
 
 #commands for shell/bat build step:
+
 npm install
 npm run tsc
 npm run webdriver:update
